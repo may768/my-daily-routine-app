@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/my-daily-routine-app/static/css/main.1413d198.css",
+    "main.js": "/my-daily-routine-app/static/js/main.9453c8a8.js",
+    "static/js/453.c252ebfc.chunk.js": "/my-daily-routine-app/static/js/453.c252ebfc.chunk.js",
+    "index.html": "/my-daily-routine-app/index.html",
+    "main.1413d198.css.map": "/my-daily-routine-app/static/css/main.1413d198.css.map",
+    "main.9453c8a8.js.map": "/my-daily-routine-app/static/js/main.9453c8a8.js.map",
+    "453.c252ebfc.chunk.js.map": "/my-daily-routine-app/static/js/453.c252ebfc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1413d198.css",
+    "static/js/main.9453c8a8.js"
+  ]
+}
