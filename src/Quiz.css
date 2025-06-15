@@ -1,0 +1,44 @@
+.quiz-box {
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background: #fdfdfd;
+}
+
+.quiz-options {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.option {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  background: #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  background: #ddd;
+}
+
+.option.correct {
+  background-color: #d4edda;
+  border: 1px solid #28a745;
+  color: #155724;
+}
+
+.option.wrong {
+  background-color: #f8d7da;
+  border: 1px solid #dc3545;
+  color: #721c24;
+}
+
+.quiz-complete {
+  font-size: 1.2rem;
+  color: green;
+  text-align: center;
+  margin-top: 2rem;
+}

@@ -1,0 +1,30 @@
+.sparkle, .star {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: floatUp 0.8s ease-out forwards;
+}
+
+.sparkle {
+  background: radial-gradient(circle, #ffeb3b, #ffc107);
+  box-shadow: 0 0 8px #ffeb3b;
+}
+
+.star {
+  background: radial-gradient(circle, #90caf9, #2196f3);
+  box-shadow: 0 0 10px #90caf9;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.5);
+  }
+}

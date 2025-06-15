@@ -1,0 +1,102 @@
+/* Default Light Theme */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --section-bg: #f2f2f2;
+  --accent-color: #007bff;
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --section-bg: #1e1e1e;
+  --accent-color: #90caf9;
+}
+
+/* Apply to body and elements */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.section {
+  background-color: var(--section-bg);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  font-weight: bold;
+}
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.journal-box {
+  padding: 1rem;
+  background-color: #fffbea;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.journal-controls {
+  margin-bottom: 0.5rem;
+}
+
+.journal-textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  background-color: #fffff6;
+}
+
+.journal-actions {
+  margin-top: 0.5rem;
+}
+
+.journal-actions button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.journal-actions button:hover {
+  background-color: #0056b3;
+}
+
+.journal-actions button:last-child {
+  background-color: #dc3545;
+}
+
+.journal-actions button:last-child:hover {
+  background-color: #b52a37;
+}
