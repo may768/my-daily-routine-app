@@ -1,0 +1,78 @@
+/* src/components/Sparkles.css */
+.sparkle {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: sparkle-fade 3s ease-out forwards;
+  z-index: 9999;
+}
+
+.sparkle.day {
+  background-color: gold;
+  box-shadow: 0 0 10px gold;
+}
+
+.sparkle.night {
+  background-color: white;
+  box-shadow: 0 0 12px #8be9fd, 0 0 6px #ffffff;
+}
+
+@keyframes sparkle-fade {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5) translateY(-20px);
+  }
+}
+/* General sparkle style */
+.sparkle {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: sparkle-fade 3s ease-out forwards;
+  z-index: 9999;
+}
+
+/* Day sparkles: golden */
+.sparkle.day {
+  background-color: gold;
+  box-shadow: 0 0 10px gold;
+}
+
+/* Night stars: white + glow */
+.sparkle.night {
+  background-color: white;
+  box-shadow: 0 0 8px #ffffff, 0 0 12px #a0cfff;
+}
+
+/* Twinkle and fade animation */
+@keyframes sparkle-fade {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5) translateY(-20px);
+  }
+}
+
+/* Optional: smooth transition for background color */
+body.day-mode {
+  background-color: #ffffff;
+  transition: background-color 0.5s ease;
+  color: #000;
+}
+
+body.night-mode {
+  background-color: #000000;
+  transition: background-color 0.5s ease;
+  color: #fff;
+}
